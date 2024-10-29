@@ -64,7 +64,6 @@ try:
     
     print('общая продолжительность эксперимента {}, период одного измерения {}, средняя частота дискретизации {}, шаг квантования АЦП {}'.format(exp_time, exp_time/schet, 1/exp_time/schet, 0.013))
 
-    #графики
     print('ГРАФИКИ')
     y=[i/256*3.3 for i in results]
     x=[i*exp_time/schet for i in range(len(results))]
